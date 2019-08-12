@@ -1,0 +1,22 @@
+.box {
+    background-color: black;
+    width: 150px;
+    height: 0;/*stavili smo 0 jer hocemo da se u animaciji expanduje*/
+    margin: 25px;
+   animation-name: growing;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; /*it will constantly expand and collapse*/
+    animation-direction: alternate;/*this allows it to collapse and expand*/
+}
+
+@keyframes growing {/*this is the name of the animation, it always has to have name*/
+    from {
+        height: 0;
+    }
+    
+    to {
+        height: 150px;
+    }
+}    
